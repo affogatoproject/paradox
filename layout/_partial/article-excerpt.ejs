@@ -1,0 +1,10 @@
+<div class="link-article">
+  <div class="link-article__date">
+    <%= item.date.format('MMM D[,] YYYY') %>
+  </div>
+  <a href="<%- config.root %><%- item.path %>">
+    <div class="link-article__title">
+      <%- item.title %>
+    </div>
+  </a>
+</div>

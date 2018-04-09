@@ -1,0 +1,15 @@
+<%
+    var title = '';
+    if (page.category) title = page.category;
+    if (page.tag) title = page.tag;
+    if (page.archive){
+        if (page.year) title = page.year + (page.month ? '/' + page.month : '');
+        else title = "Archives";
+    }
+%>
+<div class="list-articles">
+  <% page.posts.each(function(item){ %>
+  <%- partial('_partial/article-excerpt', {item: item}) %>
+  <% }); %>
+</div>
+<%- partial('_partial/pagination') %>

@@ -1,0 +1,10 @@
+<div class="main-nav">
+  <div class="main-nav__logo">
+    <div class="oval"></div>
+  </div>
+  <nav>
+    <% for (var i in theme.menu){ %>
+        <a href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+    <% } %>
+  </nav>
+</div>

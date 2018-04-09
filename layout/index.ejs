@@ -1,0 +1,32 @@
+<div class="container bg--violet">
+  <div class="box-intro">
+    <div class="box-intro__logo">
+      <img src="" alt="">
+    </div>
+    <div class="box-intro__content">
+      <h1><%= config.title %></h1>
+      <h3><% if (config.subtitle){ %><%= config.subtitle %><% } %></h3>
+    </div>
+  </div>
+
+  <div class="box-ava">
+    <img src="/images/ava.jpg" alt="">
+  </div>
+</div>
+<div class="container">
+  <div class="box-nav">
+    <div class="oval"></div>
+    <nav>
+      <% for (var i in theme.menu){ %>
+          <a href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+      <% } %>
+    </nav>
+  </div>
+
+  <div class="box-article">
+    <h3>Recent Post</h3>
+    <% page.posts.each(function(item){ %>
+        <%- partial('_partial/article-excerpt', {item: item}) %>
+    <% }); %>
+  </div>
+</div>

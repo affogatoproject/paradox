@@ -1,0 +1,27 @@
+<div class="post">
+    <!-- <p class="post__date">
+      <%= item.date.format(config.date_format) %>
+    </p> -->
+    <h1 class="post__title">
+        <%- item.title || item.link%>
+    </h1>
+    <% if(item.author) { %>
+      <p class="post__author">
+        by <a href="#"><%- item.author %></a>
+      </p>
+    <% } %>
+    <div class="post__content">
+      <%- item.content %>
+    </div>
+
+    <!-- Tags and Categories links -->
+    <%- partial('article-tags', {item: item}) %>
+    <%- partial('article-categories', {item: item}) %>
+
+    <div class="post-share">
+      <a target="_blank" href="https://twitter.com/home?status=<%- page.permalink %>" class="btn btn--primary">Share to Twitter</a>
+      <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<%- page.permalink %>" class="btn btn--primary">Share to Facebook</a>
+    </div>
+
+    <!-- <%- partial('comments') %> -->
+</div>
