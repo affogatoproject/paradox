@@ -1,0 +1,23 @@
+#Header
+menu:
+  Home: /
+  Blog: /archives
+  About: /about
+  Github: 
+  Instagram:
+  Twitter: https://twitter.com/_umriyaafini
+  
+
+
+
+favicon: /favicon.ico
+twitter: twitter.com
+google_plus:
+facebook:
+github:
+
+# Disqus Comments Shortname
+disqus_shortname: 
+
+# Google Analytics Tracking ID
+google_analytics: 

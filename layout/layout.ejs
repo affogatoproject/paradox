@@ -1,0 +1,21 @@
+<% var isIndex = page.path === 'index.html' %>
+<html>
+<%- partial('_partial/head') %>
+<%- css('css/style') %>
+</html>
+<body>
+  <% if (isIndex) { %>
+      <%- body %>
+  <% } else { %>
+    <div class="layout-wrap">
+      <div class="layout-inner">
+        <%- partial('_partial/menu') %>
+        <!-- Content -->
+        <%- body %>
+        <!-- Script -->
+        <%- partial('_partial/footer') %>
+      </div>
+    </div>
+  <% } %>
+  <%- partial('_partial/after-footer') %>
+</body>
