@@ -2,15 +2,18 @@
 menu:
   Home: /
   Blog: /archives
-
-favicon: /favicon.ico
-twitter: twitter.com
-google_plus:
-facebook:
-github:
+rss: /atom.xml
 
 # Disqus Comments Shortname
-disqus_shortname: 
+disqus_shortname:
 
 # Google Analytics Tracking ID
-google_analytics: 
+google_analytics:
+
+# Miscellaneous
+favicon: /images/favicon.ico
+twitter:
+google_plus:
+facebook:
+fb_admins:
+fb_app_id:
